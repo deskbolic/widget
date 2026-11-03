@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Checkout core engine
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: deskbolic/core
           token: ${{ secrets.CORE_REPO_TOKEN }}
@@ -65,10 +65,10 @@ jobs:
         run: sudo apt-get update && sudo apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config curl
 
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Checkout core engine
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: deskbolic/core
           token: ${{ secrets.CORE_REPO_TOKEN }}
